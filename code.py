@@ -194,7 +194,7 @@ def get_all_user_progress():
     df = ordered
     c = 0
     for row in df.itertuples():
-        if c < 3:
+        if c < 3 and df.at[row.Index, 'progress'] != 0:
             df.at[row.Index, '#'] = emojis[c]
         else:
             break
