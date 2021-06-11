@@ -2,3 +2,4 @@
 python-telegram-bot
 python_graphql_client
 pandas
+tabulate
